@@ -1,0 +1,207 @@
+header{
+    background: rgb(255, 255, 255) ;
+    padding-top: 5px;
+    min-height: 70px; /* set the min height so its responsive */
+}
+
+header a{/* this is to grab all the links in the header */
+    color:#000000 ;
+    text-decoration: none; /* this gets ride of underline on links */
+    font-size: 14px;
+    font-family: 'roboto';
+}
+header li{  /* this is to get rid of bullets in list and make it horizontal*/
+    float: right;
+    display: inline;   /* this gets rid of bullets */
+    padding: 0 10px 0 10px;  /* top, right, bottom, left */
+}
+header a:hover{
+    text-decoration: underline 1px; /* adds  a line when I hover */
+}
+
+#search {
+    border-radius: 25px;
+    border: 1px solid rgb(207, 201, 201);
+    padding: 15px;
+    width: 600px;
+    height: 15px;
+    display:flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#form1 {
+    justify-content: center; /* this centers the text box */
+    align-items: center;
+    display: inline-block; /*this makes the text box center*/
+}
+
+#form2{
+    justify-content: center; /* this centers the text box */
+    align-items: center;
+    display: inline-block; /*this makes the text box center*/ 
+}
+
+.center {
+    display: block;
+    margin-left: auto; /* this centers the google image */
+    margin-right: auto;
+    width: 40% /* made google image smaller */
+}
+
+.button {
+    margin-top: 1rem; /*space between button and text box*/
+    display: inline-block;
+    font-size: 1.4rem; 
+}
+
+body {
+    text-align: center; /*this centers the buttons*/ 
+}
+
+#submit {
+    color:black; /*these are buttons*/ 
+    padding:0.5em 1.2em;
+    background-color: rgb(245, 241, 241, .7);/*last # is opacity*/ 
+    border: none;
+    
+}
+
+#submit:hover {
+    border: 1px solid rgb(214, 213, 213);/*border button when hover*/ 
+}
+
+.smaller { /*made advanced logo smaller*/ 
+    width: 50%;
+    height: 50%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
+
+label {
+    padding-right: 20px;
+    padding-bottom: 21px;
+    text-align: left;
+}
+
+#textbox {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 350px;
+    text-align: center;
+    flex: 2;
+    
+}
+
+#p1 {
+    font-size: 18px;
+    text-align: left;
+}
+
+p {
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+#lastbutton {
+    background-color: rgb(0, 132, 255);
+    padding:0.5em 1.2em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 474px;
+}
+
+/* Google logo*/
+.header-advanced-logo, .header-advanced {
+    display: flex;
+    align-items: center;
+  }
+  
+.header-advanced-logo {
+    padding: 10px;
+  }
+.header-advanced-logo img {
+    height: 25px;
+  }
+.separator-line {
+    border-bottom: solid 1px #eceaea;
+  }
+
+.header-links {
+    margin-left: auto;
+  }
+  /*advanced search logo*/
+.advanced-search-logo {
+    text-align: left;
+    padding-top: 2%;
+    width: 30%;
+    height: 30%;
+    margin-left: 4%;
+  }
+  
+.search-container {
+    display: flex;
+    flex-direction: column;
+    /*align the search container in the center of the viewport */
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+.search-container .search-field {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    border: 1px solid #afafaf;
+    align-items: center;
+    margin: 10px;
+    padding-left: 15px;
+  }
+.search-container .search-field input {
+    border: none;
+    border-radius: 20px;
+  }
+  
+  /*margin for the container labels*/
+.advanced-search-container {
+    margin: 50px 40px;
+  }
+.advanced-search-container label {
+    display: inline-block;
+    font-size: 17px;
+  }
+  
+.advanced-search-container .whitespace {
+    display: inline-block;
+    width: 65%;
+  }
+.advanced-search-container .form-group {
+    display: flex;
+    align-items: center;
+  }
+ /* for the container labels */
+.advanced-search-container .form-group label {
+    width: 16%;
+    font-size: 14px;
+  }
+  /* This is the text box */
+.advanced-search-container .form-group input[type=text] {
+    width: 70%;
+    padding: 5px 0;
+  }
+.advanced-search-container .form-group .example {
+    font-size: 11px;
+    width: 30%;
+  }
+.advanced-search-container .form-group .example .monospace {
+    font-family: monospace;
+  }
+ .example {
+     text-align: left;
+     margin-left: 1%;
+ }
+ .whitespace label{
+     text-align: left;
+ }
