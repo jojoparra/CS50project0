@@ -1,3 +1,63 @@
+/* Style the table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+/* Style table headers and table data */
+th, td {
+text-align: left;
+padding: 5px;
+font-family: 'roboto';
+}
+  
+/* unbolded the "find pages with..." */
+th:first-child, td:first-child {
+text-align: left;
+font-weight: normal;
+padding-left: 20px;
+}
+
+/* size the width of the columns for first child */
+td:nth-child(1) {
+width: 100px;
+}
+
+/* size the width of the columns for second child */
+td:nth-child(2) {
+width: 200px;
+}
+      
+/* the third */
+td:nth-child(3) {
+width: 500px;
+}
+
+/* the input field widths */
+input {
+width: 99%;
+padding: 5px 0;
+}
+
+/* made text after : monospace */
+.monospace {
+    font-family: monospace;
+  }
+
+.font-size {
+    font-size: 13px;
+}
+
+.font-size2 {
+    font-size: 11px;
+}
+
+.small-font {
+    font-size: 13px;
+    color: rgb(95, 94, 94);
+}
+
 header{
     background: rgb(255, 255, 255) ;
     padding-top: 5px;
@@ -111,7 +171,7 @@ p {
     font-weight: bold;
     font-size: 12px;
     margin-top: 10px;
-    margin-left: 474px;
+    margin-left: 700px;
 }
 
 /* Google logo*/
@@ -128,6 +188,7 @@ p {
   }
 .separator-line {
     border-bottom: solid 1px #eceaea;
+    margin-bottom: 30px;
   }
 
 .header-links {
@@ -141,67 +202,3 @@ p {
     height: 30%;
     margin-left: 4%;
   }
-  
-.search-container {
-    display: flex;
-    flex-direction: column;
-    /*align the search container in the center of the viewport */
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-  }
-.search-container .search-field {
-    display: flex;
-    flex-direction: row;
-    border-radius: 25px;
-    border: 1px solid #afafaf;
-    align-items: center;
-    margin: 10px;
-    padding-left: 15px;
-  }
-.search-container .search-field input {
-    border: none;
-    border-radius: 20px;
-  }
-  
-  /*margin for the container labels*/
-.advanced-search-container {
-    margin: 50px 40px;
-  }
-.advanced-search-container label {
-    display: inline-block;
-    font-size: 17px;
-  }
-  
-.advanced-search-container .whitespace {
-    display: inline-block;
-    width: 65%;
-  }
-.advanced-search-container .form-group {
-    display: flex;
-    align-items: center;
-  }
- /* for the container labels */
-.advanced-search-container .form-group label {
-    width: 16%;
-    font-size: 14px;
-  }
-  /* This is the text box */
-.advanced-search-container .form-group input[type=text] {
-    width: 70%;
-    padding: 5px 0;
-  }
-.advanced-search-container .form-group .example {
-    font-size: 11px;
-    width: 30%;
-  }
-.advanced-search-container .form-group .example .monospace {
-    font-family: monospace;
-  }
- .example {
-     text-align: left;
-     margin-left: 1%;
- }
- .whitespace label{
-     text-align: left;
- }

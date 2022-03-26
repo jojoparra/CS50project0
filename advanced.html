@@ -29,48 +29,34 @@
         </div>
     </header>
         <div class="separator-line"></div>
-        <!-- SEARCH CONTAINER START -->
-        <div class="advanced-search-container">
-            <form action="https://www.google.com/search" method="get">
-                <label>Find pages with...</label>
-                <div class="whitespace"></div>
-                <label>To do this in the search box</label>
-                <div class="form-group">
-                    <label>All these words:</label>
-                    <input type="text" name="as_q">
-                    <div class="example">
-                        Type the important words: <span class="monospace">tri-colour rat terrier</span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>This exact word or phrase:</label>
-                    <input type="text" name="as_epq">
-                    <div class="example">
-                        Put exact words in quotes: <span class="monospace">"rat terrier"</span>
-    </div>
-                </div>
-                <div class="form-group">
-                    <label>Any of these words: </label>
-                    <input type="text" name="as_oq">
-                    <div class="example">
-                        Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
-    </div>
-                </div>
-                <div class="form-group">
-                    <label>None of these words:</label>
-                    <input type="text" name="as_eq">
-                    <div class="example">
-                        Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack Russell"</span>
-    </div>
-                </div>
-                <div class="form-group">
-                    <label></label>
-                    <div class="right-align">
-                        <button type="submit" id="lastbutton">Advanced Search</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <!-- SEARCH CONTAINER END -->
-    </body>
+    <table>
+      <form action="https://www.google.com/search" method="get">
+        <tr>
+          <th style="width:15%">Find pages with...</th>
+          <th><!-- hidden --></th>
+          <th class="small-font">To do this in the search box</th>
+        </tr>
+        <tr>
+          <td class="font-size">all these words:</td>
+          <td><input type="text" name="as_q"></td>
+          <td class="font-size2">Type the important words: <span class="monospace">tri-colour rat terrier</span></td>
+        </tr>
+        <tr>
+          <td class="font-size">this exact word or phrase:</td>
+          <td><input type="text" name="as_epq"></td>
+          <td class="font-size2"> Put exact words in quotes:<span class="monospace">"rat terrier"</span> </td>
+        </tr>
+        <tr>
+          <td class="font-size">any of these words:</td>
+          <td><input type="text" name="as_oq"></td>
+          <td class="font-size2"> Type OR between all the words you want: <span class="monospace">miniature OR standard</span></td>
+        </tr>
+        <tr>
+          <td class="font-size">none of these words:</td>
+          <td><input type="text" name="as_eq"></td>
+          <td class="font-size2">Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack Russell"</span></td>
+        </tr>
+      </form>
+    </table>
+  </body>
 </html>
